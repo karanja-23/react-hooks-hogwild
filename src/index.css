@@ -150,3 +150,23 @@ ul {
     transform: rotate(360deg);
   }
 }
+.image{
+  position: relative;;
+}
+.card{
+
+  height: fit-content;
+  width: 260px !important
+}
+.ui.link.cards{
+  width: 100% !important;
+  justify-content: center!important;
+  margin: auto !important;
+  justify-content: center;
+}
+.close{
+  position: absolute;
+  z-index: 2;
+  right: 5px;
+  top: 5px;
+}
