@@ -173,7 +173,7 @@ ul {
 form{
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  gap: 7px;
   margin: 20px;
 
 }
@@ -192,4 +192,19 @@ form button{
   border: 1px solid #ccc;
   outline: none;
   cursor: pointer;
+}
+#radio{
+  
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: center;
+  margin: 10px;
+}
+#radio input{
+  margin: 0px 10px 0px 0px;
+  width: fit-content;
+}
+#radio label{
+  margin: 0px 10px 0px 0px;
 }

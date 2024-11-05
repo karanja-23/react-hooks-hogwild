@@ -1,4 +1,4 @@
-const hogs = [
+let hogs = [
   {
     name: "Babe",
     specialty: "Being incredibly cute",
@@ -99,5 +99,8 @@ const hogs = [
       "https://raw.githubusercontent.com/learn-co-curriculum/react-hooks-hogwild/master/public/images/leggo_my_eggo.jpg",
   },
 ];
-
-export default hogs;
+function addHog(newHog) {
+  hogs.push(newHog);
+  console.log(hogs)
+}
+export  {hogs, addHog};

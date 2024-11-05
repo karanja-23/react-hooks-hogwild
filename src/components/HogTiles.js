@@ -1,4 +1,4 @@
-import hogs from "../porkers_data";
+import { hogs} from "../porkers_data";
 import { useState } from "react";
 function HogDescription({speciality, weight, greased, medal, color}){
     return(
