@@ -170,3 +170,26 @@ ul {
   right: 5px;
   top: 5px;
 }
+form{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin: 20px;
+
+}
+form input{
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  outline: none;
+  width: 40%;
+  margin: auto;
+}
+form button{
+  margin: 5px auto;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  outline: none;
+  cursor: pointer;
+}
