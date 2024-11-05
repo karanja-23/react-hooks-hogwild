@@ -76,13 +76,13 @@ function handleFilter(event) {
             }).map( (hog, index) => {              
                 return (  
 
-                    <div  style={{display: [display[index] ? "block" : "none"], backgroundColor: `${bgColor}`, color: `${color}`}} className="card" key={hog.name} data-index={index}>
+                    <div onClick={() => showDescription(index)} style={{display: [display[index] ? "block" : "none"], backgroundColor: `${bgColor}`, color: `${color}`}} className="card" key={hog.name} data-index={index}>
                         <button onClick={handleHide} className="close">Hide</button>
                         <div className="image">
                           <img className="the-image" style={{   width: "100%", height: "250px"}} src={hog.image} alt={hog.name}/>
                         </div>
                         <div className="content">
-                            <div onClick={() => showDescription(index)} style={{padding: "6px", border: `2px solid  ${color}`, color: `${color}`}} className="header">{hog.name}</div>
+                            <div style={{padding: "6px", border: `2px solid  ${color}`, color: `${color}`}} className="header">{hog.name}</div>
                             {description===index ? <HogDescription speciality={hog.specialty} weight={hog.weight} greased={hog.greased} medal={hog["highest medal achieved"]} color={color}/> : null}
 
                         </div>
