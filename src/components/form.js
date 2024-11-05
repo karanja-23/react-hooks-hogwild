@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import { hogs, addHog} from '../porkers_data';
+import React, { useState } from 'react';
+import {  addHog} from '../porkers_data';
 
 function Form() {
     const [name, setName] = useState("");
