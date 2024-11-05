@@ -8,8 +8,8 @@ function Form() {
     const [medal, setMedal] = useState("");
     const [image, setImage] = useState ("");
     const [greased, setGreased] = useState(false);
-    const [hogsState, setHogsState] = useState(hogs);
-
+   
+   
     function setMyName(event) {
         setName(event.target.value);
         
@@ -44,9 +44,7 @@ function Form() {
         addHog(newHog);
         event.target.reset();
       }
-      useEffect(() => {
-        setHogsState(hogs);
-      }, [hogs]);
+     
     return (
         <form onSubmit={handleSubmit}>
             <h3>Add Hog</h3>
